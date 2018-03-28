@@ -11,8 +11,6 @@ import 'perfect-scrollbar/dist/css/perfect-scrollbar.min.css';
 import NotificationSystem from 'react-notification-system';
 
 import Sidebar from 'components/Sidebar/Sidebar.jsx';
-import Header from 'components/Header/Header.jsx';
-import Footer from 'components/Footer/Footer.jsx';
 
 // dinamically create dashboard routes
 import dashRoutes from 'routes/dash.jsx';
@@ -93,7 +91,6 @@ class Dash extends Component {
         <NotificationSystem ref="notificationSystem" style={style} />
         <Sidebar {...this.props} />
         <div className={"main-panel" + (this.props.location.pathname === "/maps/full-screen-maps" ? " main-panel-maps" : "")} ref="mainPanel">
-          <Header {...this.props} />
           <Switch>
             {
               dashRoutes.map((prop, key) => {
@@ -130,7 +127,6 @@ class Dash extends Component {
               })
             }
           </Switch>
-          <Footer fluid />
         </div>
       </div>
     );
