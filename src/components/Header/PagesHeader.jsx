@@ -45,18 +45,6 @@ class PagesHeader extends Component{
                                 <p>Dashboard</p>
                             </NavLink>
                         </li>
-                        <li className={this.activeRoute('login-page')}>
-                            <NavLink to={'/pages/login-page'} className="nav-link">
-                                <i className="fa fa-drivers-license-o"></i>
-                                <p>Login</p>
-                            </NavLink>
-                        </li>
-                        <li className={this.activeRoute('register-page')}>
-                            <NavLink to={'/pages/register-page'} className="nav-link">
-                                <i className="fa fa-user-circle-o"></i>
-                                <p>Register</p>
-                            </NavLink>
-                        </li>
                         <li className={this.activeRoute('lock-screen-page')}>
                             <NavLink to={'/pages/lock-screen-page'} className="nav-link">
                                 <i className="fa fa-lock"></i>
