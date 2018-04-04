@@ -1,4 +1,4 @@
-import Dashboard from 'views/Dashboard/Dashboard.jsx';
+import Dashboard from 'views/Dashboard/Dashboard';
 import RegularTables from 'views/Tables/RegularTables.jsx';
 import ExtendedTables from 'views/Tables/ExtendedTables.jsx';
 import DataTables from 'views/Tables/DataTables.jsx';
